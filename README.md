@@ -37,3 +37,4 @@ EXTRA:
 Implement data visualization features to represent city information.
 Add modals for confirmation dialogs and alerts.
 
+
