@@ -1,6 +1,3 @@
-Definición de cliente: es un resumen, con tus palabras (como si fueras el cliente que la va a consumir) de lo que hará y tendrá la aplicación (pero sin entrar en temas técnicos)
-Definición técnica: en back, detalle de las tablas que tendrá, junto con sus columnas, detalle de los endpoints, con lo que recibirán en los bodys y sus respuestas. En front, será lo que contenga cada pantalla, junto con los diseños de tu aplicación hecha en Excalidraw
-
 Client Definition:
 
 As a young professional, I am willing to relocate in order in order to improve my quality of life and savings. 
