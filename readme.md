@@ -1,9 +1,7 @@
 Client Definition:
 
 As a young professional, I am willing to relocate in order in order to improve my quality of life and savings. 
-
 As a user of the proposed calculator app, I wan't to be able to compare and calculate salary figures for different job positions. 
-
 The application should provide the following features:
 
 1. Calculate and display average salary figures for job positions like Junior Developer, Financial Analyst and Nurse.
@@ -55,8 +53,8 @@ GET /taxes: Retrieve tax brackets based on income and location.
 GET /expenses: Retrieve average cost of living expenses for each location.
 POST /calculate: Perform salary and expense calculations based on user inputs.
 
-
 Frontend:
+
 10. The frontend of the calculator app will be built using React.js and will provide intuitive and interactive interface for users to input their data and obtain calculation results.
 
 11. Create frontend repository:
@@ -64,7 +62,7 @@ Frontend:
 Home Screen: Select job position and location.
 Salary and Expense Calculator: Allow users to enter their desired job position and location to calculate average salary figures. Also support expenses.
 Login and Register: User authentication to register and login.
-Panel: Provide forms for creating and editing city data.
+Panel: Provide forms for creating and editing city data.                                                                                     
 
 HASTA ACA, EL RESTO SERIA EXTRA.
 
@@ -112,3 +110,6 @@ form (react-hook-form) --submit---Petition: Post/Auth/signin
 ##Use React.js and communicate with the backend API**
 ##Node.js and slonik##
 ##Set up: npm install, run the frond end npm start. Run with localhost:3000##
+
+
+
