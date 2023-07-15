@@ -1,16 +1,20 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-require('dotenv').config();
+//const cookieParser = require('cookie-parser');
+const { db, cors: options } = require('./configs');
+//const errors = require('./misc/errors');
 
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors(options));
 app.use(express.json());
 
 // Routes
-const routes = require('./routes/routes');
-app.use('/api', routes);
+const routes = require('./routes');
+//app.use('/api', routes);
+app.use(routes(db));
 
 // Start the server
 const port = process.env.PORT || 4000;
