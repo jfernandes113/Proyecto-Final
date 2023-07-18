@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+require('./createTables');
 //const cookieParser = require('cookie-parser');
 const { db, cors: options } = require('./configs');
 //const errors = require('./misc/errors');
