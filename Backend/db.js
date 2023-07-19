@@ -1,10 +1,17 @@
-const { createPool } = require('slonik');
+const { Client } = require('pg');
 
-const db = createPool(process.env.DB_URL);
+async function connectionDb() {
+  const client = new Client({
+    connectionString: process.env.DB_URL,
+  });
+  
+  await client.connect(); // Conectarse al servidor de la base de datos
+  const sql = fs.readFileSync('./sql/create_tables.sql', 'utf8');
+  await client.query(sql);
+
+  return client;
+}
 
 module.exports = {
-  db,
+  connectionDb
 };
-
-
-//postgres://user1:1234@localhost:5432/prueba

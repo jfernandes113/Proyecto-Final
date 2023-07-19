@@ -1,8 +1,8 @@
-const { db } = require('../db');
+const { connectionDb } = require('../db');
 
 const getSalaries = async (req, res) => {
   try {
-    const salaries = await db.query('SELECT * FROM Salaries');
+    const salaries = await connectionDb().query('SELECT * FROM Salaries');
     res.json(salaries.rows);
   } catch (error) {
     console.error('Error retrieving salaries:', error);
