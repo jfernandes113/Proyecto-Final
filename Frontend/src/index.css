@@ -11,3 +11,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.back-link {
+  color: #007bff; /* Color del texto del enlace */
+  text-decoration: none; /* Quita la subrayado del enlace */
+  font-weight: bold; /* Peso de la fuente en negrita */
+  padding: 8px 12px; /* Espacio de relleno alrededor del enlace */
+  background-color: #f8f8f8; /* Color de fondo del enlace */
+  border: 1px solid #007bff; /* Borde del enlace */
+  border-radius: 4px; /* Radio del borde para hacerlo redondeado */
+}
+
+.back-link:hover {
+  background-color: #007bff; /* Color de fondo del enlace al pasar el ratón */
+  color: #fff; /* Color del texto del enlace al pasar el ratón */
+}

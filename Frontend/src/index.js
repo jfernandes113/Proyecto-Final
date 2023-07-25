@@ -5,7 +5,9 @@ import './index.css';
 import Styled from "./styles";
 import Route from "./components/Route";
 import Provider from "./context/Provider";
-import Salaries from "./pages/Salaries";
+import Jobs from "./pages/Jobs";
+import Locations from "./pages/Locations";
+import Home from './pages/Home';
 
 //<Route path="/login" component={Login} />
 //<Route path="/register" component={Register} />
@@ -17,8 +19,10 @@ const Main = () => {
     <Provider>
       <Styled.Wrapper>
         <Switch>
-          <Route path="/salaries" guarded={true} component={Salaries} />
-          <Redirect to="/salaries" />
+          <Route path="/home" guarded={true} component={Home} />
+          <Route path="/jobs" guarded={true} component={Jobs} />
+          <Route path="/locations" guarded={true} component={Locations} />
+          <Redirect to="/home" />
         </Switch>
       </Styled.Wrapper>
     </Provider>

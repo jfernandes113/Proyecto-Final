@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Madrid",
+        "averageRent": "1.1k €",
+        "averageWeather": "15.9°C",
+        "averageAge": "40.5",
+        "recommendations": "Famous for its nightlife, parks, and historical sites like the Royal Palace of Madrid."
+    },
+    {
+        "name": "Sevilla",
+        "averageRent": "850 €",
+        "averageWeather": "18.6°C",
+        "averageAge": "39.8",
+        "recommendations": "Known for its vibrant culture, Flamenco music and dance, and historical sites like the Cathedral of Seville."
+    },
+    {
+        "name": "Bilbao",
+        "averageRent": "900 €",
+        "averageWeather": "14.5°C",
+        "averageAge": "41.2",
+        "recommendations": "Rich in Basque culture, Bilbao is renowned for the Guggenheim Museum and its gastronomy."
+    }
+]
